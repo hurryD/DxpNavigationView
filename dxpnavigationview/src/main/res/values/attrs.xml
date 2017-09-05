@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomBottomNavigationView">
+
+        <attr name="defaltColor" format="color"/>
+        <attr name="selectColor" format="color"/>
+        <attr name="iconHeight" format="dimension"/>
+        <attr name="textSize" format="dimension"/>
+
+        <!-- 图标 默认-->
+        <attr name="defIcon1" format="reference|integer"/>
+        <attr name="defIcon2" format="reference|integer"/>
+        <attr name="defIcon3" format="reference|integer"/>
+        <attr name="defIcon4" format="reference|integer"/>
+        <attr name="defIcon5" format="reference|integer"/>
+        <!-- 图标 选中-->
+        <attr name="selIcon1" format="reference|integer"/>
+        <attr name="selIcon2" format="reference|integer"/>
+        <attr name="selIcon3" format="reference|integer"/>
+        <attr name="selIcon4" format="reference|integer"/>
+        <attr name="selIcon5" format="reference|integer"/>
+
+        <!-- 文字 -->
+        <attr name="itemText1" format="string"/>
+        <attr name="itemText2" format="string"/>
+        <attr name="itemText3" format="string"/>
+        <attr name="itemText4" format="string"/>
+        <attr name="itemText5" format="string"/>
+
+    </declare-styleable>
+
+</resources>

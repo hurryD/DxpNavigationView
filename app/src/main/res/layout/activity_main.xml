@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white_f3">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+    </FrameLayout>
+
+    <com.hurry.dxpnavigationview.CustomBottomNavigationView
+        android:id="@+id/ngView_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white_fc"
+        app:defaltColor="@color/black_999"
+        app:iconHeight="30dp"
+        app:itemText1="首页"
+        app:itemText2="定制"
+        app:itemText3="消息"
+        app:itemText4="我的"
+        app:defIcon1="@drawable/bottom_icon_1"
+        app:defIcon2="@drawable/bottom_icon_2"
+        app:defIcon3="@drawable/bottom_icon_3"
+        app:defIcon4="@drawable/bottom_icon_4"
+        app:selIcon1="@drawable/bottom_icon_1_click"
+        app:selIcon2="@drawable/bottom_icon_2_click"
+        app:selIcon3="@drawable/bottom_icon_3_click"
+        app:selIcon4="@drawable/bottom_icon_4_click"
+        app:selectColor="@color/colorAccent"
+        app:textSize="12sp" />
+
+</LinearLayout>
