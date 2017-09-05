@@ -9,17 +9,17 @@
         <attr name="textSize" format="dimension"/>
 
         <!-- 图标 默认-->
-        <attr name="defIcon1" format="reference|integer"/>
-        <attr name="defIcon2" format="reference|integer"/>
-        <attr name="defIcon3" format="reference|integer"/>
-        <attr name="defIcon4" format="reference|integer"/>
-        <attr name="defIcon5" format="reference|integer"/>
+        <attr name="defIcon1" format="reference"/>
+        <attr name="defIcon2" format="reference"/>
+        <attr name="defIcon3" format="reference"/>
+        <attr name="defIcon4" format="reference"/>
+        <attr name="defIcon5" format="reference"/>
         <!-- 图标 选中-->
-        <attr name="selIcon1" format="reference|integer"/>
-        <attr name="selIcon2" format="reference|integer"/>
-        <attr name="selIcon3" format="reference|integer"/>
-        <attr name="selIcon4" format="reference|integer"/>
-        <attr name="selIcon5" format="reference|integer"/>
+        <attr name="selIcon1" format="reference"/>
+        <attr name="selIcon2" format="reference"/>
+        <attr name="selIcon3" format="reference"/>
+        <attr name="selIcon4" format="reference"/>
+        <attr name="selIcon5" format="reference"/>
 
         <!-- 文字 -->
         <attr name="itemText1" format="string"/>
