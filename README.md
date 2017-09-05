@@ -2,7 +2,7 @@
 安卓主框架所用底部模块切换的导航栏，最多支持5个模块，简单易用。<br><br>
 gradle依赖:<br>
 ```
-	//Add it in your root build.gradle at the end of repositories
+	//Step 1. Add it in your root build.gradle at the end of repositories
 	allprojects {
 		repositories {
 			...
@@ -10,9 +10,13 @@ gradle依赖:<br>
 		}
 	}
         
+	
+	
 	//Step 2. Add the dependency in build.gradle for app
 	dependencies {
+	
 	        compile 'com.github.hurryD:DxpNavigationView:v1.0'
+		
 	}
 
 ```
@@ -43,9 +47,11 @@ gradle依赖:<br>
         app:selectColor="@color/colorAccent"
         app:textSize="12sp" />
         
+	
         
 //Activity
 CustomBottomNavigationView ngView = (CustomBottomNavigationView) findViewById(R.id.ngView_main);
+
 //设置导航栏点击监听
 ngView.setOnMenuClickListener(new CustomBottomNavigationView.OnMenuClickListener() {
        @Override
@@ -53,6 +59,7 @@ ngView.setOnMenuClickListener(new CustomBottomNavigationView.OnMenuClickListener
            mTextMessage.setText(ngTexts[position]);
        }
  });
+ 
  //设置默认被选中的模块 0,1,2,3.. (可选)
  ngView.setCurrentIndex(0);
         
