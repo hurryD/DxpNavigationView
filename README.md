@@ -1,6 +1,20 @@
 # DxpNavigationView
 安卓主框架所用底部模块切换的导航栏，最多支持5个模块，简单易用。<br><br>
-使用方法：<br>
+gradle依赖:<br>
+```
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+        
+        dependencies {
+	        compile 'com.github.hurryD:DxpNavigationView:v1.0'
+	}
+
+```
+使用方法：<br><br>
 
 ```java
 //Xml
