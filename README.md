@@ -1,7 +1,10 @@
 # DxpNavigationView
 安卓主框架所用底部模块切换的导航栏，最多支持5个模块，简单易用。<br><br>
 gradle依赖:<br>
+Step 1. Add the JitPack repository to your build file<br>
+Add it in your root build.gradle at the end of repositories:<br>
 ```
+	
 	allprojects {
 		repositories {
 			...
@@ -9,11 +12,18 @@ gradle依赖:<br>
 		}
 	}
         
-        dependencies {
-	        compile 'com.github.hurryD:DxpNavigationView:v1.0'
-	}
 
 ```
+<br>
+Step 2. Add the dependency in build.gradle for app<br>
+```
+	dependencies {
+	        compile 'com.github.hurryD:DxpNavigationView:v1.0'
+	}
+	
+```
+
+<br>
 使用方法：<br><br>
 
 ```java
