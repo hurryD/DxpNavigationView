@@ -15,7 +15,7 @@ gradle依赖:<br>
 	//Step 2. Add the dependency in build.gradle for app
 	dependencies {
 	
-	        compile 'com.github.hurryD:DxpNavigationView:v1.0'
+	        compile 'com.github.hurryD:DxpNavigationView:v1.1'
 		
 	}
 
