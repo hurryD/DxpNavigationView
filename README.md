@@ -66,6 +66,6 @@ ngView.setOnMenuClickListener(new CustomBottomNavigationView.OnMenuClickListener
 ```
 <br><br>
 效果截图：<br><br>
-![](https://github.com/hurryD/CustomBottomNavigationView/raw/master/screenshot/Screenshot_2017-09-04-14-59-17.jpg)  
-![](https://github.com/hurryD/CustomBottomNavigationView/raw/master/screenshot/Screenshot_2017-09-04-14-59-25.jpg)  
+![](https://github.com/hurryD/DxpNavigationView/raw/master/screenshot/Screenshot_2017-09-04-14-59-17.jpg)  
+![](https://github.com/hurryD/DxpNavigationView/raw/master/screenshot/Screenshot_2017-09-04-14-59-25.jpg)  
 
