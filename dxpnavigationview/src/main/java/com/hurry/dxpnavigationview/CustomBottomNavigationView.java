@@ -196,27 +196,32 @@ public class CustomBottomNavigationView extends View {
             return;
         }
         //item的宽度
-        itemWidth = getWidth() / itemTexts.size();
+        itemWidth = (float)(getWidth() / itemTexts.size());
+
+        float realHeight = getHeight() - getPaddingBottom() - getPaddingTop();
 
         //item 文字的高度 = 导航栏高度 / 2.5
-        float itemTextHeight = (float) getHeight() / 2.5f;
+        float itemTextHeight = realHeight / 2.2f;
         //item icon的高度 = 导航栏高度 - 文字高度
-        float itemIconHeight = getHeight() - itemTextHeight;
+        float itemIconHeight = realHeight - itemTextHeight;
 
         for (int i = 0; i < defIcons.size(); i++) {
             //画文字
             String str = itemTexts.get(i);
             mPaint.getTextBounds(str, 0, str.length(), textBounds);
             mPaint.setColor(i == currentIndex ? selectColor : defColor);
-            canvas.drawText(str, itemWidth / 2 - (float) textBounds.width() / 2f + itemWidth * i, itemTextHeight / 2f + (float) textBounds.height() / 2f + itemIconHeight, mPaint);
+            canvas.drawText(str, itemWidth / 2 - (float) textBounds.width() / 2f + itemWidth * i,
+                    itemTextHeight / 2f + (float) textBounds.height() / 2f + itemIconHeight + getPaddingTop(), mPaint); //
 
             //画图标
+            int iconTop = (int) (itemIconHeight / 2f - iconHeight / 2f + getPaddingTop());
             Bitmap bm = drawableToBitmap(i == currentIndex ? selIcons.get(i) : defIcons.get(i));
             iconRect.set(0, 0, bm.getWidth(), bm.getHeight());
             iconRect2.set((int) (itemWidth / 2f - iconHeight / 2f + itemWidth * i),
-                    (int) (itemIconHeight / 2f - iconHeight / 3f),
+                    iconTop,
                     (int) (itemWidth / 2f + iconHeight / 2f + itemWidth * i),
-                    (int) (itemIconHeight / 2f + iconHeight * 2f / 3f));
+                    iconTop + iconHeight);
+                    //(int) (itemIconHeight / 2f + iconHeight * 2f / 3f));
             canvas.drawBitmap(bm, iconRect, iconRect2, mPaint);
 
         }

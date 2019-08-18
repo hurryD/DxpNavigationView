@@ -29,8 +29,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/white_fc"
+        android:paddingBottom="5dp"
+        android:paddingTop="3dp"
         app:defaltColor="@color/black_999"
-        app:iconHeight="30dp"
+        app:iconHeight="28dp"
         app:itemText1="首页"
         app:itemText2="定制"
         app:itemText3="消息"
@@ -44,6 +46,7 @@
         app:selIcon3="@drawable/bottom_icon_3_click"
         app:selIcon4="@drawable/bottom_icon_4_click"
         app:selectColor="@color/colorAccent"
-        app:textSize="12sp" />
+        app:textSize="10sp"
+        />
 
 </LinearLayout>
